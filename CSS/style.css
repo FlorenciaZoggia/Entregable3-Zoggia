@@ -53,13 +53,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
 }
-.principal-uno .imagen-uno {
-  max-width: 100%;
-  height: auto;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-.principal-uno .imagen-dos {
+.principal-uno .imagen-uno, .principal-uno .imagen-dos {
   max-width: 100%;
   height: auto;
   padding-top: 2rem;
