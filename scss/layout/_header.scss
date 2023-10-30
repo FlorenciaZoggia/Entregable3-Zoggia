@@ -1,0 +1,39 @@
+@import "../utilities/variables.scss";
+
+
+header {
+    background-color: rgb(146, 190, 69);
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Logo {
+        img {
+            max-width: 120px;
+            height: auto;
+            margin: 5px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+    li {    
+        margin: 15px;
+        
+
+    }
+
+        a {
+            color: rgb(15, 13, 13);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-right: 5rem;
+        
+    }
+    }
+}
