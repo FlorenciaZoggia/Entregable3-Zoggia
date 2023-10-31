@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,9 @@
     <title>Tienda de Padel Online | LATERAL PADEL</title>
     <!--CSS-->
     <link rel="stylesheet" href="CSS/style.css">
+
+ <!--AOS Libreria-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -17,11 +21,11 @@
     </div>
         <nav>
             <ul>
-                <li> <a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Garantia</a></li>
-                <li><a href="#">Como comprar</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li> <a href="index.html">Inicio</a></li>
+                <li><a href="html/productos.html">Productos</a></li>
+                <li><a href="html/garantia.html">Garantia</a></li>
+                <li><a href="html/como comprar.html">Como comprar</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,11 +35,11 @@
         <video src="assets/video presentacion.mp4" autoplay loop muted playsinline></video>
         <h1>Encontrá todo lo que necesitas para tu juego con la mejor calidad</h1>
     
-        <img class="imagen-uno" src="assets/Imagen 2.jpeg" alt="">
+        <img class="imagen-uno" data-aos="zoom-in" src="assets/Imagen 2.jpeg" alt="">
         <h2>Servicio rápido y eficaz</h2>
     
 
-        <img class="imagen-dos" src="assets/Imagen 1.jpeg" alt="">
+        <img class="imagen-dos" data-aos="zoom-out-down" src="assets/Imagen 1.jpeg" alt="">
         <h3>Envíos <span>GRATIS</span> a todo el país</h3>
 
     </section>
@@ -47,5 +51,11 @@
         <a class="icono-instagram" href="https://instagram.com/lateralpadel/"><img src="assets/icons8-instagram-48.png" alt="icono-instagram"></a>
         <a class="icono-facebook" href="https://facebook.com/profile.php?id=61550975676788"><img src="assets/icons8-facebook-48.png" alt="icono-facebook"></a>
     </footer>
+
+     <!--Script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

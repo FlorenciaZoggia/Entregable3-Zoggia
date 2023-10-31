@@ -1,26 +1,32 @@
 footer
-{ background-color: white;
+{ background: rgb(43,193,66);
+    background: radial-gradient(circle, rgba(43,193,66,1) 60%, rgba(32,89,26,0.6306897759103641) 100%);
     border-top: 2px solid  rgb(146, 190, 69);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 5px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    animation: scaleFooter 5s ease-in-out infinite;
+   
     
     
 h4 {
     font-size: 1.5rem;
-    color:  rgb(146, 190, 69);
-    margin-bottom: 10px;
+    color: black;
+    font-family: $font-inicio;
+    margin-bottom: 15px;
 }
 
-   
+
 .icono-instagram {
-    width: 20px;
+    width: 10px;
     height: auto;
-    margin: 30px;
+    margin: 10px;
+    flex-direction: row;
+    cursor: pointer;
     
    }
        
@@ -29,3 +35,16 @@ h4 {
 
    }
 }
+
+@keyframes scaleFooter {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); 
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
