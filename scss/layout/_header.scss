@@ -7,6 +7,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    //gradiente lineal
+    background-image: linear-gradient (to right, white, rgb(146, 190, 69));
 
     .Logo {
         img {
@@ -33,6 +35,12 @@ header {
         font-size: 1.5rem;
         font-family: 'Josefin Sans', sans-serif;
         margin-right: 5rem;
+        //transition
+        transition: 1s;
+        &:hover {
+            font-size: 2rem;
+
+        }
         
     }
     }
