@@ -10,6 +10,8 @@ header {
     //gradiente lineal
     background-image:  linear-gradient (to right, white, rgb(146, 190, 69));
 
+
+
     .Logo {
         img {
             max-width: 120px;
@@ -44,4 +46,48 @@ header {
         
     }
     }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+        }
+    
+        .Logo img {
+            max-width: 50px;
+            margin: 0;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+            padding: 4px;
+        }
+    
+        nav li {
+            margin: 4px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        header {
+            flex-direction: row;
+        }
+    
+        .Logo img {
+            max-width: 120px;
+            margin: 5px;
+        }
+    
+        nav ul {
+            flex-direction: row;
+            text-align: left;
+            padding: 0;
+        }
+    
+        nav li {
+            margin: 15px;
+        }
+    }
+    
+
 }

@@ -35,3 +35,44 @@ p {
 h5 {
     @extend h4
 }
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 2rem;
+        color: $color-inicio;
+        
+    }
+
+    h4, h5 {
+        font-size: 1.5rem;
+        color: darkolivegreen;
+        
+    }
+
+    p {
+        font-size: 1rem;
+        color: $color-inicio;
+        
+    }
+}
+
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+        color: $color-inicio;
+        
+    }
+
+    h4, h5 {
+        font-size: 2rem;
+        color: darkolivegreen;
+        
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: $color-inicio;
+        
+    }
+}

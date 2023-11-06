@@ -32,6 +32,40 @@ header ul a {
 header ul a:hover {
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  header header {
+    flex-direction: column;
+  }
+  header .Logo img {
+    max-width: 50px;
+    margin: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 4px;
+  }
+  header nav li {
+    margin: 4px;
+  }
+}
+@media (min-width: 768px) {
+  header header {
+    flex-direction: row;
+  }
+  header .Logo img {
+    max-width: 120px;
+    margin: 5px;
+  }
+  header nav ul {
+    flex-direction: row;
+    text-align: left;
+    padding: 0;
+  }
+  header nav li {
+    margin: 15px;
+  }
+}
 
 * {
   margin: 0;
@@ -88,6 +122,27 @@ body {
   color: rgb(76, 232, 29);
 }
 
+@media (max-width: 768px) {
+  .principal-uno video {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .principal-uno .imagen-uno,
+  .principal-uno .imagen-dos {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .principal-uno p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .principal-uno p {
+    font-size: 1.7rem;
+  }
+}
+
 header {
   background-image: linear-gradient(to right, rgb(20, 108, 20), rgb(146, 190, 69));
 }
@@ -127,6 +182,30 @@ footer .icono-instagram, footer .icono-facebook {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  footer h4, footer h5 {
+    font-size: 1rem;
+    color: black;
+  }
+  footer .icono-instagram,
+  footer .icono-facebook {
+    width: 20px;
+    height: auto;
+    margin: 5px;
+  }
+}
+@media (min-width: 768px) {
+  footer h4, footer h5 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  footer .icono-instagram,
+  footer .icono-facebook {
+    width: 10px;
+    height: auto;
+    margin: 10px;
   }
 }
 header {
@@ -285,6 +364,33 @@ footer .icono-instagram, footer .icono-facebook {
     transform: scale(1);
   }
 }
+@media (max-width: 768px) {
+  header .Logo img {
+    max-width: 80px;
+  }
+}
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  header ul {
+    display: flex;
+  }
+  header ul li {
+    margin: 15px;
+  }
+  header ul li a {
+    font-size: 1.5rem;
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .enlace-productos {
+    font-size: 2rem;
+  }
+}
 h3 {
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -315,6 +421,34 @@ p {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    font-size: 2rem;
+    color: white;
+  }
+  h4, h5 {
+    font-size: 1.5rem;
+    color: darkolivegreen;
+  }
+  p {
+    font-size: 1rem;
+    color: white;
+  }
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3rem;
+    color: white;
+  }
+  h4, h5 {
+    font-size: 2rem;
+    color: darkolivegreen;
+  }
+  p {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
 h3 {
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -334,6 +468,22 @@ h3 {
   margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  .contactos {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+  .contactos {
+    font-size: 1.5rem;
+  }
+}
 h3 {
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -352,6 +502,27 @@ ol li {
   justify-content: center;
   margin-top: 1rem;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  ol li {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  ol li {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

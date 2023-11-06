@@ -192,3 +192,55 @@ h4 {
       transform: scale(1);
     }
   }
+
+  @media (max-width: 768px) {
+    header .Logo img {
+        max-width: 80px;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    header ul {
+        display: none; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    header ul {
+        display: flex;
+    }
+    header ul li {
+        margin: 15px;
+    }
+    header ul li a {
+        font-size: 1.5rem;
+        margin-right: 5rem;
+        
+    }
+}
+
+
+@media (min-width: 768px) {
+    header {
+       
+    }
+}
+
+
+@media (max-width: 768px) {
+    .enlace-productos {
+        font-size: 2rem;
+        
+    }
+}
+
+
+@media (min-width: 768px) {
+    .paleta {
+       
+    }
+}
+

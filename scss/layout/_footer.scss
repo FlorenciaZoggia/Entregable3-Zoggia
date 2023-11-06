@@ -48,3 +48,34 @@ h4 {
     }
   }
   
+  @media (max-width: 768px) {
+    footer h4 {
+        font-size: 1rem;
+        color: black;
+        
+    }
+
+    footer .icono-instagram,
+    footer .icono-facebook {
+        width: 20px;
+        height: auto;
+        margin: 5px;
+        
+    }
+}
+
+@media (min-width: 768px) {
+    footer h4 {
+        font-size: 1.5rem;
+        color: black;
+        
+    }
+
+    footer .icono-instagram,
+    footer .icono-facebook {
+        width: 10px;
+        height: auto;
+        margin: 10px;
+        
+    }
+}
