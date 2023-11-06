@@ -105,7 +105,7 @@ footer {
   margin-bottom: 10px;
   animation: scaleFooter 5s ease-in-out infinite;
 }
-footer h4 {
+footer h4, footer h5 {
   font-size: 1.5rem;
   color: black;
   font-family: "Nunito Sans", sans-serif;
@@ -261,7 +261,7 @@ footer {
   margin-bottom: 10px;
   animation: scaleFooter 5s ease-in-out infinite;
 }
-footer h4 {
+footer h4, footer h5 {
   font-size: 1.5rem;
   color: black;
   font-family: "Nunito Sans", sans-serif;
@@ -284,6 +284,74 @@ footer .icono-instagram, footer .icono-facebook {
   100% {
     transform: scale(1);
   }
+}
+h3 {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h4, h5 {
+  color: darkolivegreen;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contactos {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+h3 {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+ol li {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
