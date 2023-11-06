@@ -2,6 +2,9 @@
 
 .principal-uno {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 
     video {
@@ -10,8 +13,9 @@
         padding-top: 2rem;
         padding-bottom: 1rem;
     }
+    
 
-    h1 {
+    p {
         color: $color-inicio;
         font-size: 2rem;
         font-family: $font-inicio;
@@ -22,24 +26,30 @@
     .imagen-uno {
         max-width: 100%;
         height: auto;
+        max-width: 800px;
         padding-top: 2rem;
         padding-bottom: 1rem;
-        
-    }
-    
-    .imagen-dos {
-        @extend .imagen-uno;
-        
-    }
-
-    h2 {
-        color: $color-inicio;
-        font-size: 2rem;
-        font-family: $font-inicio;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        
     }
 
-    h3 {
+        p {
+            color: $color-inicio;
+            font-size: 2rem;
+            font-family: $font-inicio;
+            text-align: center;
+            
+        }
+
+
+.imagen-dos {
+    @extend .imagen-uno;
+    
+} 
+
+    p {
         color: $color-inicio;
         font-size: 1.5rem;
         font-family: $font-inicio;

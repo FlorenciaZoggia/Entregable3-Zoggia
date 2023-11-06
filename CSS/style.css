@@ -45,6 +45,9 @@ body {
 
 .principal-uno {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .principal-uno video {
   max-width: 100%;
@@ -52,7 +55,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.principal-uno h1 {
+.principal-uno p {
   color: white;
   font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
@@ -61,22 +64,26 @@ body {
 .principal-uno .imagen-uno, .principal-uno .imagen-dos {
   max-width: 100%;
   height: auto;
+  max-width: 800px;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.principal-uno h2 {
+.principal-uno p {
   color: white;
   font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
 }
-.principal-uno h3 {
+.principal-uno p {
   color: white;
   font-size: 1.5rem;
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
 }
-.principal-uno h3 span {
+.principal-uno p span {
   font-weight: bold;
   color: rgb(76, 232, 29);
 }
@@ -122,12 +129,46 @@ footer .icono-instagram, footer .icono-facebook {
     transform: scale(1);
   }
 }
-.enlace-verde {
+header {
+  background-color: rgb(146, 190, 69);
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient to right, white, rgb(146, 190, 69);
+}
+header .Logo img {
+  max-width: 120px;
+  height: auto;
+  margin: 5px;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header ul li {
+  margin: 15px;
+}
+header ul a {
+  color: rgb(15, 13, 13);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-right: 5rem;
+  transition: 1s;
+}
+header ul a:hover {
+  font-size: 2rem;
+}
+
+.enlace-productos {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 3rem;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .paleta {
@@ -156,7 +197,7 @@ section {
   flex-wrap: wrap;
 }
 
-.container-paletas {
+.container-paletas, .container-accesorios, .container-pelotas {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -167,11 +208,11 @@ section {
   margin-left: 2rem;
 }
 
-.container-paletas {
+.container-paletas, .container-accesorios, .container-pelotas {
   background-color: white;
 }
 
-.container-paletas h1 {
+.container-paletas h1, .container-accesorios h1, .container-pelotas h1 {
   color: black;
   font-size: 2rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -179,7 +220,7 @@ section {
   margin-bottom: 1rem;
 }
 
-.container-paletas h2 {
+.container-paletas h2, .container-accesorios h2, .container-pelotas h2 {
   background-color: white;
   color: black;
   font-size: 2rem;
@@ -190,7 +231,7 @@ section {
   margin-bottom: 1rem;
 }
 
-.container-paletas h3 {
+.container-paletas h3, .container-accesorios h3, .container-pelotas h3 {
   color: white;
   background-color: #27ae60;
   font-size: 1.5rem;
@@ -199,12 +240,50 @@ section {
   margin-bottom: 2px;
 }
 
-.container-paletas img {
+.container-paletas img, .container-accesorios img, .container-pelotas img {
   width: 250px;
 }
 
-.container-paletas:hover {
+.container-paletas:hover, .container-accesorios:hover, .container-pelotas:hover {
   opacity: 90%;
+}
+
+footer {
+  background: rgb(43, 193, 66);
+  background: radial-gradient(circle, rgb(43, 193, 66) 60%, rgba(32, 89, 26, 0.6306897759) 100%);
+  border-top: 2px solid rgb(146, 190, 69);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  animation: scaleFooter 5s ease-in-out infinite;
+}
+footer h4 {
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 15px;
+}
+footer .icono-instagram, footer .icono-facebook {
+  width: 10px;
+  height: auto;
+  margin: 10px;
+  flex-direction: row;
+  cursor: pointer;
+}
+@keyframes scaleFooter {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

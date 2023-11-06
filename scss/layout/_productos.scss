@@ -1,11 +1,57 @@
 @import "../utilities/variables.scss";
 
-.enlace-verde {
+header {
+    background-color: rgb(146, 190, 69);
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //gradiente lineal
+    background-image: linear-gradient (to right, white, rgb(146, 190, 69));
+
+    .Logo {
+        img {
+            max-width: 120px;
+            height: auto;
+            margin: 5px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+
+    li {    
+        margin: 15px;
+        
+
+    }
+
+        a {
+            color: rgb(15, 13, 13);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-right: 5rem;
+        //transition
+        transition: 1s;
+        &:hover {
+            font-size: 2rem;
+
+        }
+        
+    }
+    }
+}
+
+.enlace-productos {
     color: $color-inicio;
     font-family: $font-inicio;
     font-size: 3rem;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .paleta {
@@ -90,3 +136,59 @@ margin-bottom: 1rem;
 .container-paletas:hover {
     opacity: 90%;
 }
+
+.container-pelotas
+{@extend .container-paletas}
+
+.container-accesorios
+{@extend .container-paletas}
+
+footer
+{ background: rgb(43,193,66);
+    background: radial-gradient(circle, rgba(43,193,66,1) 60%, rgba(32,89,26,0.6306897759103641) 100%);
+    border-top: 2px solid  rgb(146, 190, 69);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    animation: scaleFooter 5s ease-in-out infinite;
+   
+    
+    
+h4 {
+    font-size: 1.5rem;
+    color: black;
+    font-family: $font-inicio;
+    margin-bottom: 15px;
+}
+
+
+.icono-instagram {
+    width: 10px;
+    height: auto;
+    margin: 10px;
+    flex-direction: row;
+    cursor: pointer;
+    
+   }
+       
+   .icono-facebook {
+    @extend .icono-instagram
+
+   }
+}
+
+@keyframes scaleFooter {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); 
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
